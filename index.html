@@ -1,97 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css"/>
+    <title>mi primera pagina</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>mi primera pagina</title>
-</head>
+  <body>
+    <header>
+      <h1>Mi hoja de vida</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#perfil_profecional">Perfil Profecional</a></li>
+          <li><a href="#hobbies">Mis Hobbies</a></li>
+          <li><a href="#metas">Mis Metas</a></li>
+          <li><a href="#actividades_pendientes">Actividades Pendientes</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-  <h1>bienvenidos a mi pagina wed</h1>
-  <h2>acerca de mi</h2>
-  <h3>acerca de mi</h3>
-  <h4>acerca de mi</h4>
-  <h5>acerca de mi</h5>
-  <h6>acerca de mi</h6>
-  <p>
-    Mi nombres es Adrian Hernandez soy estudiante de programacion de talento tech y quiero ejercer esta carrera
-  </p>
-  <h3>mi hobbies</h3>
+    <div class="section" id="perfil_profecional">
+      <div class="section__dos">
+        <h2>Perfil profecional</h2>
+        <p>
+          Soy estudiante de programación en Talento Tech, apasionado por la
+          tecnología y el desarrollo de soluciones digitales. Mi formación se
+          enfoca en el manejo de herramientas modernas como sistemas de control
+          de versiones, desarrollo web y metodologías colaborativas. Me
+          caracterizo por ser curioso, metódico y comprometido con el
+          aprendizaje continuo, con miras a desempeñarme como desarrollador en
+          entornos dinámicos e innovadores. Actualmente desarrollo habilidades
+          en Git y Markdown, aplicando buenas prácticas para la documentación
+          técnica y el trabajo en equipo. Mi objetivo es integrarme a un equipo
+          de desarrollo donde pueda crecer profesionalmente, aportar valor y
+          continuar especializándome en programación.
+        </p>
+      </div>
 
-  <ol>
-    <li>Futbol</li>
-    <li>ver peliculas</li>
-    <li>ver Animes</li>
-  </ol>
+      <img
+        src="https://statics.forbesargentina.com/2023/09/crop/6515b50914ef8__822x822.webp"
+        alt="Zuckerberg"/>
 
-  <h3>Deciciones</h3>
+    </div>
 
-  <ul>
-    <li>React</li>
-    <li>aprender Ingles</li>
-    <li>Trabajar como programador</li>
-  </ul>
+    <section id="hobbies">
+      <h3>mi hobbies</h3>
+      <ol>
+        <li>Edición de video</li>
+        <li>Resolver rompecabezas o juegos de lógica</li>
+        <li>Aprender otro lenguaje de programación</li>
+        <li>Explorar otras culturas</li>
+        <li>Crear tutoriales de lo que llevo aprendido</li>
+      </ol>
+    </section>
 
-  <h3>Aprendizajes</h3>
+    <section id="metas">
+      <h3>Metas</h3>
+      <ul>
+        <li>
+          <b>Construir un portafolio web</b> profesional donde puedas mostrar
+          tus proyectos con React y otras tecnologías, incluyendo documentación
+          bien escrita (¡Markdown será tu aliado!).
+        </li>
+        <li>
+          <b
+            >Participar en comunidades de desarrollo (como GitHub, Discord o
+            foros de Talento Tech)</b
+          >
+          para practicar colaboración, recibir feedback y estar al tanto de las
+          tendencias tecnológicas.
+        </li>
+        <li>
+          <b>Dominar el uso de Git y GitHub en proyectos reales,</b> entendiendo
+          ramas, commits, pull requests y flujos de trabajo colaborativos.
+        </li>
+      </ul>
+    </section>
 
-  <dl>
-    <dt>html</dt>
-    <dd>lenguaje de marca dehipertexto</dd>
-    <dt>css</dt>
-    <dd>hojas de vida en cascada</dd>
-    <dt>javascript</dt>
-    <dd>lenguajes de programacion que permite crear contenido dinamico</dd>
-  </dl>
+    <section id="actividades_pendientes">
+      <h3>Actividades Pendientes</h3>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miercoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+            <th>Sabado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Gimnasio</td>
+            <td>Estudiar</td>
+            <td>Trabajar</td>
+            <td>Visitar la familia</td>
+            <td>Ir a la barbería</td>
+            <td>Ver la Premier League</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-  <div id="links">
-    <a href="https://www.youtube.com/">TouTube</a>
-    <a href="https://github.com/">GitHub</a>
-  </div>
+    <section id="contacto">
+      <h2>Formulario de contacto</h2>
+      <form action="">
+        <label name="Nombre">Digite su nombre</label>
+        <input type="text" placeholder="Nombre completo" />
+        <label name="Documento">Digite su documento</label>
+        <input type="number" placeholder="Documento de identidad" />
+        <label name="email">Digite su email</label>
+        <input type="email" placeholder="Correo electrónico" />
+        <label name="pass">Digite su contraseña</label>
+        <input type="password" placeholder="Contraseña" lang="**"/><br>
+        <select name="city" id="">
+          <option value="" disabled="" selected="">Selecciona ciudad</option>
+          <option value="">Valledupar</option>
+          <option value="">Barranquilla</option>
+          <option value="">Bogota</option>
+          <option value="">Medellin</option>
+        </select><br>
+        <input type="submit"></input>
+      </form>
+    </section>
 
-  <br>
-  <br>
-
-  <img src="https://i.pinimg.com/736x/56/76/5f/56765fd8f4d40b2550b4ad70de14f41f.jpg" alt="programacion">
-  <img src="./img/Breaking AI News.jpeg" alt="tecnologhy">
-
-  <br>
-  <br>
-  <br>
-  <br>
-
-  <div class="schedule">
-    <table border="1">
-      <thead>
-        <tr>
-          <th>Lunes</th>
-          <th>Martes</th>
-          <th>Miercoles</th>
-          <th>Jueves</th>
-          <th>Viernes</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Hacer el almuerzo</td>
-          <td></td>
-          <td>Trabajo</td>
-          <td></td>
-          <td>Lavar la ropa.</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="contact-form">
-    <h1>Formulario de contacto</h1>
-    <form action="">
-      <input type="text" placeholder="Nombre">
-      <input type="text" placeholder="Descripcion">
-      <input type="email" placeholder="Correo">
-      <button type="submit">Enviar información</button>
-    </form>
-  </div>
-</body>
-
+    <div>
+      <pre>
+      Derechos por copyright&copy; adrianHernandez.org
+    </pre
+      >
+    </div>
+  </body>
 </html>
